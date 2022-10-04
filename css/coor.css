@@ -1,0 +1,477 @@
+@charset "utf-8";
+
+.container {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  /* background-color: pink; */
+}
+
+.wrapper {
+  width: 100%;
+}
+
+/* ======= header ======= */
+header {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.logoRightMenu {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: #ccc; */
+}
+
+.logo img {
+  width: 454px;
+  height: 120px;
+}
+
+.rightMenu {
+  /* width: 440px; */
+  padding-top: 55px;
+}
+
+.rightMenu li {
+  float: left;
+  margin-right: 30px;
+}
+
+.rightMenu li > a {
+  font: 18px "lato black";
+}
+
+.rightMenu li:last-child {
+  margin-right: 0;
+}
+
+/* ======= main ======= */
+/* videoText */
+main {
+  position: relative;
+}
+
+.videoText {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.videoText video {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.videoText p {
+  position: absolute;
+  bottom: 40px;
+  left: 190px;
+  font: 14px "lato";
+  color: white;
+}
+
+.videoText p .videoTextTitle {
+  font-size: 18px;
+}
+
+.videoText img {
+  position: absolute;
+  bottom: 0;
+  right: 1px;
+  width: 100px;
+  height: 26px;
+}
+
+/* mainMenu */
+.mainMenu {
+  position: absolute;
+  left: 165px;
+  top: 710px;
+  /* background-color: aqua; */
+  /* width: 100%; */
+}
+
+.gnb {
+  /* position: fixed; */
+  /* left: 535px; */
+  display: flex;
+  /* justify-content: center; */
+  /* z-index: 2; */
+}
+
+.gnb li {
+  margin: 0 35px;
+  flex: 20px;
+}
+
+.gnb li > a {
+  font: 18px "lato black";
+}
+
+/* recommend */
+
+.recommend {
+  margin-top: 180px;
+  /* background-color: aqua; */
+}
+
+.recommend h3 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.recoList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.recoList > div {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.recoList > div:nth-child(4n) {
+  margin: 0;
+}
+
+.recoList img {
+  width: 280px;
+  height: 380px;
+}
+
+.recoList h4 {
+  margin-bottom: 10px;
+}
+
+.recoList .line {
+  text-decoration: line-through;
+}
+
+/* reco1 */
+.reco1 {
+  width: 280px;
+  /* margin: 0px auto; */
+  position: relative;
+}
+
+.reco1 .reco1-2 {
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+.reco1:hover .reco1-2 {
+  display: block;
+}
+
+/* reco2 */
+.reco2 {
+  width: 280px;
+  /* margin: 0px auto; */
+  position: relative;
+}
+
+.reco2 .reco2-2 {
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+.reco2:hover .reco2-2 {
+  display: block;
+}
+
+/* reco3 */
+.reco3 {
+  width: 280px;
+  /* margin: 0px auto; */
+  position: relative;
+}
+
+.reco3 .reco3-2 {
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+.reco3:hover .reco3-2 {
+  display: block;
+}
+
+/* reco4 */
+.reco4 {
+  width: 280px;
+  /* margin: 0px auto; */
+  position: relative;
+}
+
+.reco4 .reco4-2 {
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+.reco4:hover .reco4-2 {
+  display: block;
+}
+
+/* reco5 */
+.reco5 {
+  width: 280px;
+  /* margin: 0px auto; */
+  position: relative;
+}
+
+.reco5 .reco5-2 {
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+.reco5:hover .reco5-2 {
+  display: block;
+}
+
+/* reco6 */
+.reco6 {
+  width: 280px;
+  /* margin: 0px auto; */
+  position: relative;
+}
+
+.reco6 .reco6-2 {
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+.reco6:hover .reco6-2 {
+  display: block;
+}
+
+/* reco7 */
+.reco7 {
+  width: 280px;
+  /* margin: 0px auto; */
+  position: relative;
+}
+
+.reco7 .reco7-2 {
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+.reco7:hover .reco7-2 {
+  display: block;
+}
+
+/* reco8 */
+.reco8 {
+  width: 280px;
+  /* margin: 0px auto; */
+  position: relative;
+}
+
+.reco8 .reco8-2 {
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+.reco8:hover .reco8-2 {
+  display: block;
+}
+
+/* magazine */
+
+.magazine {
+  margin-top: 80px;
+  /* background-color: blueviolet; */
+}
+
+.magazine h3 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.magList {
+  display: flex;
+}
+
+.magList > div {
+  margin-right: 20px;
+}
+
+.magList img {
+  width: 380px;
+  height: 250px;
+}
+
+.magList h4 {
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* store */
+
+.store {
+  margin-top: 100px;
+}
+
+.store h3 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contStore input[id*="slide"] {
+  display: none;
+}
+.contStore .slidewrap {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.contStore .slidelist {
+  white-space: nowrap;
+  font-size: 0;
+  overflow: hidden;
+  position: relative;
+}
+.contStore .slidelist > li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  transition: all 0.5s;
+}
+.contStore .slidelist > li > a {
+  display: block;
+  position: relative;
+}
+.contStore .slidelist > li > a img {
+  width: 100%;
+}
+.contStore .slidelist label {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 50px;
+  cursor: pointer;
+}
+
+/* input에 체크되면 슬라이드 효과 */
+.contStore input[id="slide01"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(0%);
+}
+.contStore input[id="slide02"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-100%);
+}
+.contStore input[id="slide03"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-200%);
+}
+
+/* input에 체크되면 텍스트 효과 */
+.contStore input[id="slide01"]:checked ~ .slidewrap li:nth-child(1) .textbox h3 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+.contStore input[id="slide01"]:checked ~ .slidewrap li:nth-child(1) .textbox p {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s;
+}
+.contStore input[id="slide02"]:checked ~ .slidewrap li:nth-child(2) .textbox h3 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+.contStore input[id="slide02"]:checked ~ .slidewrap li:nth-child(2) .textbox p {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s;
+}
+.contStore input[id="slide03"]:checked ~ .slidewrap li:nth-child(3) .textbox h3 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+.contStore input[id="slide03"]:checked ~ .slidewrap li:nth-child(3) .textbox p {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s;
+}
+
+/* 좌,우 슬라이드 버튼 */
+.slide-control > div {
+  display: none;
+}
+.contStore .left {
+  left: 30px;
+  background: url("./img/left.png") center center / 100% no-repeat;
+}
+.contStore .right {
+  right: 30px;
+  background: url("./img/right.png") center center / 100% no-repeat;
+}
+.contStore input[id="slide01"]:checked ~ .slidewrap .slide-control > div:nth-child(1) {
+  display: block;
+}
+.contStore input[id="slide02"]:checked ~ .slidewrap .slide-control > div:nth-child(2) {
+  display: block;
+}
+.contStore input[id="slide03"]:checked ~ .slidewrap .slide-control > div:nth-child(3) {
+  display: block;
+}
+
+/* 페이징 */
+.slide-pagelist {
+  text-align: center;
+  padding: 20px;
+}
+.slide-pagelist > li {
+  display: inline-block;
+  vertical-align: middle;
+}
+.slide-pagelist > li > label {
+  display: block;
+  padding: 8px 30px;
+  border-radius: 30px;
+  background: #ccc;
+  margin: 20px 10px;
+  cursor: pointer;
+}
+.contStore input[id="slide01"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(1) > label {
+  background: #999;
+}
+.contStore input[id="slide02"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(2) > label {
+  background: #999;
+}
+.contStore input[id="slide03"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(3) > label {
+  background: #999;
+}
+
+/* ======= footer ======= */
+.footer-menu {
+  margin-top: 100px;
+  border: 1px solid black;
+}
+
+.footer-menu ul {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-menu ul > li {
+  margin: 16px 50px;
+  /* padding: 1px;
+  border-right: 1px solid black; */
+}
+
+.footer-menu ul > li a {
+  font-size: 16px;
+  font-weight: 600;
+}
