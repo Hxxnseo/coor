@@ -362,6 +362,36 @@ main {
   cursor: pointer;
 }
 
+.contStore .slidelist .textbox {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.6;
+  text-align: center;
+}
+.contStore .slidelist .textbox h4 {
+  position: relative;
+  line-height: 580px;
+
+  font-size: 30px;
+  color: #fff;
+  transform: translateY(30px);
+  transition: all 0.5s;
+}
+.contStore .slidelist .textbox p {
+  font-size: 14px;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.5s;
+}
+
+.contStore .slidelist .textbox .black {
+  color: black;
+}
+
 /* input에 체크되면 슬라이드 효과 */
 .contStore input[id="slide01"]:checked ~ .slidewrap .slidelist > li {
   transform: translateX(0%);
@@ -405,28 +435,6 @@ main {
   transition-delay: 0.4s;
 }
 
-/* 좌,우 슬라이드 버튼 */
-.slide-control > div {
-  display: none;
-}
-.contStore .left {
-  left: 30px;
-  background: url("./img/left.png") center center / 100% no-repeat;
-}
-.contStore .right {
-  right: 30px;
-  background: url("./img/right.png") center center / 100% no-repeat;
-}
-.contStore input[id="slide01"]:checked ~ .slidewrap .slide-control > div:nth-child(1) {
-  display: block;
-}
-.contStore input[id="slide02"]:checked ~ .slidewrap .slide-control > div:nth-child(2) {
-  display: block;
-}
-.contStore input[id="slide03"]:checked ~ .slidewrap .slide-control > div:nth-child(3) {
-  display: block;
-}
-
 /* 페이징 */
 .slide-pagelist {
   text-align: center;
@@ -463,15 +471,20 @@ main {
 .footer-menu ul {
   display: flex;
   justify-content: center;
+  height: 50px;
 }
 
 .footer-menu ul > li {
-  margin: 16px 50px;
-  /* padding: 1px;
-  border-right: 1px solid black; */
+  margin-top: 15px;
 }
 
 .footer-menu ul > li a {
   font-size: 16px;
   font-weight: 600;
+  border-right: 1px solid black;
+  padding: 0px 50px;
+}
+
+.footer-menu ul > li:last-child a {
+  border-right: 0;
 }
