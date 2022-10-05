@@ -61,8 +61,8 @@ main {
 
 .videoText video {
   display: block;
-  margin: 0 auto;
   width: 100%;
+  margin: 0 auto;
 }
 
 .videoText p {
@@ -79,42 +79,31 @@ main {
 
 .videoText img {
   position: absolute;
-  bottom: 0;
   right: 1px;
+  bottom: 0;
   width: 100px;
   height: 26px;
 }
 
 /* mainMenu */
 .mainMenu {
-  position: absolute;
-  left: 165px;
-  top: 710px;
-  /* background-color: aqua; */
-  /* width: 100%; */
+  margin-top: 50px;
 }
 
 .gnb {
-  /* position: fixed; */
-  /* left: 535px; */
   display: flex;
-  /* justify-content: center; */
-  /* z-index: 2; */
-}
-
-.gnb li {
-  margin: 0 35px;
-  flex: 20px;
+  justify-content: center;
 }
 
 .gnb li > a {
+  padding: 0px 40px;
   font: 18px "lato black";
 }
 
 /* recommend */
 
 .recommend {
-  margin-top: 180px;
+  margin-top: 100px;
   /* background-color: aqua; */
 }
 
@@ -152,15 +141,15 @@ main {
 
 /* reco1 */
 .reco1 {
-  width: 280px;
   /* margin: 0px auto; */
   position: relative;
+  width: 280px;
 }
 
 .reco1 .reco1-2 {
+  display: none;
   position: absolute;
   top: 0;
-  display: none;
 }
 
 .reco1:hover .reco1-2 {
@@ -169,15 +158,15 @@ main {
 
 /* reco2 */
 .reco2 {
-  width: 280px;
   /* margin: 0px auto; */
   position: relative;
+  width: 280px;
 }
 
 .reco2 .reco2-2 {
+  display: none;
   position: absolute;
   top: 0;
-  display: none;
 }
 
 .reco2:hover .reco2-2 {
@@ -186,15 +175,15 @@ main {
 
 /* reco3 */
 .reco3 {
-  width: 280px;
   /* margin: 0px auto; */
   position: relative;
+  width: 280px;
 }
 
 .reco3 .reco3-2 {
+  display: none;
   position: absolute;
   top: 0;
-  display: none;
 }
 
 .reco3:hover .reco3-2 {
@@ -203,15 +192,15 @@ main {
 
 /* reco4 */
 .reco4 {
-  width: 280px;
   /* margin: 0px auto; */
   position: relative;
+  width: 280px;
 }
 
 .reco4 .reco4-2 {
+  display: none;
   position: absolute;
   top: 0;
-  display: none;
 }
 
 .reco4:hover .reco4-2 {
@@ -220,15 +209,15 @@ main {
 
 /* reco5 */
 .reco5 {
-  width: 280px;
   /* margin: 0px auto; */
   position: relative;
+  width: 280px;
 }
 
 .reco5 .reco5-2 {
+  display: none;
   position: absolute;
   top: 0;
-  display: none;
 }
 
 .reco5:hover .reco5-2 {
@@ -237,15 +226,15 @@ main {
 
 /* reco6 */
 .reco6 {
-  width: 280px;
   /* margin: 0px auto; */
   position: relative;
+  width: 280px;
 }
 
 .reco6 .reco6-2 {
+  display: none;
   position: absolute;
   top: 0;
-  display: none;
 }
 
 .reco6:hover .reco6-2 {
@@ -254,15 +243,15 @@ main {
 
 /* reco7 */
 .reco7 {
-  width: 280px;
   /* margin: 0px auto; */
   position: relative;
+  width: 280px;
 }
 
 .reco7 .reco7-2 {
+  display: none;
   position: absolute;
   top: 0;
-  display: none;
 }
 
 .reco7:hover .reco7-2 {
@@ -271,15 +260,15 @@ main {
 
 /* reco8 */
 .reco8 {
-  width: 280px;
   /* margin: 0px auto; */
   position: relative;
+  width: 280px;
 }
 
 .reco8 .reco8-2 {
+  display: none;
   position: absolute;
   top: 0;
-  display: none;
 }
 
 .reco8:hover .reco8-2 {
@@ -331,19 +320,19 @@ main {
   display: none;
 }
 .contStore .slidewrap {
-  max-width: 100%;
   margin: 0 auto;
+  max-width: 100%;
 }
 .contStore .slidelist {
+  position: relative;
   white-space: nowrap;
   font-size: 0;
   overflow: hidden;
-  position: relative;
 }
 .contStore .slidelist > li {
   display: inline-block;
-  vertical-align: middle;
   width: 100%;
+  vertical-align: middle;
   transition: all 0.5s;
 }
 .contStore .slidelist > li > a {
@@ -355,18 +344,18 @@ main {
 }
 .contStore .slidelist label {
   position: absolute;
-  z-index: 10;
   top: 50%;
-  transform: translateY(-50%);
+  z-index: 10;
   padding: 50px;
+  transform: translateY(-50%);
   cursor: pointer;
 }
 
 .contStore .slidelist .textbox {
   position: absolute;
-  z-index: 1;
   top: 50%;
   left: 50%;
+  z-index: 1;
   transform: translate(-50%, -50%);
   line-height: 1.6;
   text-align: center;
@@ -376,6 +365,7 @@ main {
   line-height: 580px;
 
   font-size: 30px;
+  letter-spacing: 2px;
   color: #fff;
   transform: translateY(30px);
   transition: all 0.5s;
@@ -437,8 +427,8 @@ main {
 
 /* 페이징 */
 .slide-pagelist {
-  text-align: center;
   padding: 20px;
+  text-align: center;
 }
 .slide-pagelist > li {
   display: inline-block;
@@ -446,10 +436,10 @@ main {
 }
 .slide-pagelist > li > label {
   display: block;
+  margin: 20px 10px;
   padding: 8px 30px;
   border-radius: 30px;
   background: #ccc;
-  margin: 20px 10px;
   cursor: pointer;
 }
 .contStore input[id="slide01"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(1) > label {
@@ -463,6 +453,7 @@ main {
 }
 
 /* ======= footer ======= */
+/* footer-menu */
 .footer-menu {
   margin-top: 100px;
   border: 1px solid black;
@@ -470,8 +461,8 @@ main {
 
 .footer-menu ul {
   display: flex;
-  justify-content: center;
   height: 50px;
+  justify-content: center;
 }
 
 .footer-menu ul > li {
@@ -479,10 +470,10 @@ main {
 }
 
 .footer-menu ul > li a {
+  padding: 0px 40px;
   font-size: 16px;
   font-weight: 600;
   border-right: 1px solid black;
-  padding: 0px 50px;
 }
 
 .footer-menu ul > li:last-child a {
