@@ -5,7 +5,6 @@
   width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
-  /* background-color: pink; */
 }
 
 .wrapper {
@@ -22,7 +21,6 @@ header {
 .logoRightMenu {
   display: flex;
   justify-content: space-between;
-  /* background-color: #ccc; */
 }
 
 .logo img {
@@ -31,7 +29,6 @@ header {
 }
 
 .rightMenu {
-  /* width: 440px; */
   padding-top: 55px;
 }
 
@@ -104,7 +101,6 @@ main {
 
 .recommend {
   margin-top: 100px;
-  /* background-color: aqua; */
 }
 
 .recommend h3 {
@@ -141,7 +137,6 @@ main {
 
 /* reco1 */
 .reco1 {
-  /* margin: 0px auto; */
   position: relative;
   width: 280px;
 }
@@ -158,7 +153,6 @@ main {
 
 /* reco2 */
 .reco2 {
-  /* margin: 0px auto; */
   position: relative;
   width: 280px;
 }
@@ -175,7 +169,6 @@ main {
 
 /* reco3 */
 .reco3 {
-  /* margin: 0px auto; */
   position: relative;
   width: 280px;
 }
@@ -192,7 +185,6 @@ main {
 
 /* reco4 */
 .reco4 {
-  /* margin: 0px auto; */
   position: relative;
   width: 280px;
 }
@@ -209,7 +201,6 @@ main {
 
 /* reco5 */
 .reco5 {
-  /* margin: 0px auto; */
   position: relative;
   width: 280px;
 }
@@ -226,7 +217,6 @@ main {
 
 /* reco6 */
 .reco6 {
-  /* margin: 0px auto; */
   position: relative;
   width: 280px;
 }
@@ -243,7 +233,6 @@ main {
 
 /* reco7 */
 .reco7 {
-  /* margin: 0px auto; */
   position: relative;
   width: 280px;
 }
@@ -260,7 +249,6 @@ main {
 
 /* reco8 */
 .reco8 {
-  /* margin: 0px auto; */
   position: relative;
   width: 280px;
 }
@@ -279,7 +267,6 @@ main {
 
 .magazine {
   margin-top: 80px;
-  /* background-color: blueviolet; */
 }
 
 .magazine h3 {
@@ -306,7 +293,6 @@ main {
 }
 
 /* store */
-
 .store {
   margin-top: 100px;
 }
@@ -372,6 +358,8 @@ main {
 }
 .contStore .slidelist .textbox p {
   font-size: 14px;
+  letter-spacing: 1px;
+
   color: #fff;
   opacity: 0;
   transform: translateY(10px);
@@ -394,7 +382,7 @@ main {
 }
 
 /* input에 체크되면 텍스트 효과 */
-.contStore input[id="slide01"]:checked ~ .slidewrap li:nth-child(1) .textbox h3 {
+.contStore input[id="slide01"]:checked ~ .slidewrap li:nth-child(1) .textbox h4 {
   opacity: 1;
   transform: translateY(0);
   transition-delay: 0.2s;
@@ -404,7 +392,7 @@ main {
   transform: translateY(0);
   transition-delay: 0.4s;
 }
-.contStore input[id="slide02"]:checked ~ .slidewrap li:nth-child(2) .textbox h3 {
+.contStore input[id="slide02"]:checked ~ .slidewrap li:nth-child(2) .textbox h4 {
   opacity: 1;
   transform: translateY(0);
   transition-delay: 0.2s;
@@ -414,7 +402,7 @@ main {
   transform: translateY(0);
   transition-delay: 0.4s;
 }
-.contStore input[id="slide03"]:checked ~ .slidewrap li:nth-child(3) .textbox h3 {
+.contStore input[id="slide03"]:checked ~ .slidewrap li:nth-child(3) .textbox h4 {
   opacity: 1;
   transform: translateY(0);
   transition-delay: 0.2s;
@@ -452,10 +440,23 @@ main {
   background: #999;
 }
 
+/* bigLogo */
+.bigLogo {
+  position: relative;
+  margin-top: 50px;
+  text-align: right;
+}
+
+.bigLogo img {
+  width: 900px;
+}
+
 /* ======= footer ======= */
 /* footer-menu */
-.footer-menu {
+footer {
   margin-top: 100px;
+}
+.footer-menu {
   border: 1px solid black;
 }
 
@@ -470,7 +471,7 @@ main {
 }
 
 .footer-menu ul > li a {
-  padding: 0px 40px;
+  padding: 0px 50px;
   font-size: 16px;
   font-weight: 600;
   border-right: 1px solid black;
@@ -478,4 +479,50 @@ main {
 
 .footer-menu ul > li:last-child a {
   border-right: 0;
+}
+
+/* addressSnsCopy */
+.addressSnsCopy {
+  display: flex;
+  position: relative;
+  height: 205px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  font-family: lato;
+}
+
+.address {
+  width: 33%;
+}
+
+address {
+  font-style: normal;
+  font-size: 14px;
+}
+
+.sns {
+  position: absolute;
+  top: 25px;
+  left: 33%;
+  width: 26%;
+  height: 170px;
+  border-left: 1px solid black;
+}
+
+.sns .email {
+  margin: 30px 0 60px 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.sns .insta {
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.copy {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
