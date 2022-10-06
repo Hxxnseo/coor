@@ -440,17 +440,6 @@ main {
   background: #999;
 }
 
-/* bigLogo */
-.bigLogo {
-  position: relative;
-  margin-top: 50px;
-  text-align: right;
-}
-
-.bigLogo img {
-  width: 900px;
-}
-
 /* ======= footer ======= */
 /* footer-menu */
 footer {
