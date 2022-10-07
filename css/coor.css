@@ -26,6 +26,7 @@ header {
 .logo img {
   width: 454px;
   height: 120px;
+  opacity: 1;
 }
 
 .rightMenu {
@@ -108,159 +109,83 @@ main {
   text-align: center;
 }
 
-.recoList {
+#recoList {
   display: flex;
   flex-wrap: wrap;
 }
 
-.recoList > div {
+.active {
+  opacity: 1 !important;
+}
+
+.reco {
+  opacity: 0;
+
+  transition: all 1s;
+}
+
+.mag {
+  opacity: 0;
+
+  transition: all 1s;
+}
+
+.contStore {
+  opacity: 0;
+
+  transition: all 1s;
+}
+
+#recoList > div {
   margin-right: 20px;
   margin-bottom: 20px;
 }
 
-.recoList > div:nth-child(4n) {
+#recoList > div:nth-child(4n) {
   margin: 0;
 }
 
-.recoList img {
+#recoList img {
   width: 280px;
   height: 380px;
 }
 
-.recoList h4 {
+#recoList h4 {
   margin-bottom: 10px;
 }
 
-.recoList .line {
+#recoList .line {
   text-decoration: line-through;
 }
 
-/* reco1 */
-.reco1 {
+/* reco */
+.reco {
   position: relative;
   width: 280px;
 }
 
-.reco1 .reco1-2 {
-  display: none;
+.reco .reco-2 {
   position: absolute;
   top: 0;
+  /* display: none; */
+  opacity: 0;
 }
 
-.reco1:hover .reco1-2 {
-  display: block;
+.reco:hover .reco-2 {
+  /* display: block; */
+  opacity: 1;
+  transition: opacity 0.5s linear;
 }
 
-/* reco2 */
-.reco2 {
-  position: relative;
-  width: 280px;
-}
-
-.reco2 .reco2-2 {
-  display: none;
+.reco:hover .reco-2 p {
   position: absolute;
   top: 0;
-}
-
-.reco2:hover .reco2-2 {
-  display: block;
-}
-
-/* reco3 */
-.reco3 {
-  position: relative;
-  width: 280px;
-}
-
-.reco3 .reco3-2 {
-  display: none;
-  position: absolute;
-  top: 0;
-}
-
-.reco3:hover .reco3-2 {
-  display: block;
-}
-
-/* reco4 */
-.reco4 {
-  position: relative;
-  width: 280px;
-}
-
-.reco4 .reco4-2 {
-  display: none;
-  position: absolute;
-  top: 0;
-}
-
-.reco4:hover .reco4-2 {
-  display: block;
-}
-
-/* reco5 */
-.reco5 {
-  position: relative;
-  width: 280px;
-}
-
-.reco5 .reco5-2 {
-  display: none;
-  position: absolute;
-  top: 0;
-}
-
-.reco5:hover .reco5-2 {
-  display: block;
-}
-
-/* reco6 */
-.reco6 {
-  position: relative;
-  width: 280px;
-}
-
-.reco6 .reco6-2 {
-  display: none;
-  position: absolute;
-  top: 0;
-}
-
-.reco6:hover .reco6-2 {
-  display: block;
-}
-
-/* reco7 */
-.reco7 {
-  position: relative;
-  width: 280px;
-}
-
-.reco7 .reco7-2 {
-  display: none;
-  position: absolute;
-  top: 0;
-}
-
-.reco7:hover .reco7-2 {
-  display: block;
-}
-
-/* reco8 */
-.reco8 {
-  position: relative;
-  width: 280px;
-}
-
-.reco8 .reco8-2 {
-  display: none;
-  position: absolute;
-  top: 0;
-}
-
-.reco8:hover .reco8-2 {
-  display: block;
+  opacity: 1;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  font-size: 11px;
+  color: rgb(126, 126, 126);
 }
 
 /* magazine */
@@ -349,7 +274,6 @@ main {
 .contStore .slidelist .textbox h4 {
   position: relative;
   line-height: 580px;
-
   font-size: 30px;
   letter-spacing: 2px;
   color: #fff;
@@ -358,8 +282,6 @@ main {
 }
 .contStore .slidelist .textbox p {
   font-size: 14px;
-  letter-spacing: 1px;
-
   color: #fff;
   opacity: 0;
   transform: translateY(10px);
