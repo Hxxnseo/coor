@@ -25,6 +25,11 @@ a {
   color: #333;
 }
 
+a:hover {
+  font-weight: 600;
+  color: #ccc;
+}
+
 strong {
   display: block;
 }
@@ -38,7 +43,7 @@ h2 {
 }
 
 h3 {
-  font: 28px "lato black";
+  font: 28px "Lato-Black";
 }
 
 h4 {
